@@ -1,9 +1,7 @@
 const webpack = require('webpack')
-//const clientConfig = require('./webpack.base.config')
 const clientConfig = require('./webpack.client.config')
 
-module.exports = function setupDevServer(app){
-  // Hot reloading
+module.exports = function setupDevServer (app) {
   clientConfig.entry.app = [
     'webpack-hot-middleware/client',
     clientConfig.entry.app
