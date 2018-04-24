@@ -20,3 +20,4 @@ module.exports = function setupDevServer (app) {
   )
   app.use(require('webpack-hot-middleware')(clientCompiler))
 }
+// State management
