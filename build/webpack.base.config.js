@@ -1,7 +1,7 @@
 const path = require('path')
 
 const config = {
-  entry : {
+  entry: {
     app: path.resolve(__dirname, '../src/client-entry.js')
   },
   module: {
@@ -27,7 +27,7 @@ const config = {
       }
     ]
   },
-  output:{
+  output: {
     path: path.resolve(__dirname, '../dist'),
     publicPath: '/',
     filename: 'assets/js/[name].js'
